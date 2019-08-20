@@ -1,0 +1,131 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+    background-color:  #777;
+}
+
+@media (min-width:360px){
+   img{
+       width: 50%;
+   }    
+}
+
+@media (min-width:760px){
+    header{
+        flex-direction: row;
+    }
+    
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;    
+}
+
+header img{
+    margin: 15px auto;
+    height: 165px;
+    width: 130px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+
+nav a:hover{
+    color: rgb(123, 76, 161); 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 auto;
+}
+
+main img{
+    margin: 0 auto;
+}
+
+.destaques{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.destaques div{
+    width: 30%;
+    
+
+}
+
+.destaques img{
+    margin: 10px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+}
+
+.destaques p {
+    width: 50%;
+    align-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+
+}
+
+footer{
+    background-color: #777;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+@media (min-width:760px){
+    header, header nav{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav a{
+        margin: 0 10px;
+    }
+
+    header img{
+        margin:10px;
+    }
+
+    main{
+        flex-direction: row;
+        margin-bottom: 15px;
+        flex-flow: row wrap;
+    }
+
+    p{
+        width: 50%;
+    }
+    .destaques div{
+        width: 300px;
+    }
+}
+
